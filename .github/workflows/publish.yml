@@ -16,3 +16,6 @@ jobs:
          docker build . --tag ghcr.io/roobann/docker-helloworld:latest
          docker run ghcr.io/roobann/docker-helloworld:latest
          docker push ghcr.io/roobann/docker-helloworld:latest
+      - name: Image pushed
+        run: echo "pushed"
+        
