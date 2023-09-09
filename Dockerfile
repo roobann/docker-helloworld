@@ -33,8 +33,8 @@ RUN mkdir /etc/nginx/logs
 
 # Add a sample index file
 ADD index.html /www/data/
-ADD index.html /www/data/app1
-ADD index.html /www/data/app2
+ADD index.html /www/data/app1/
+ADD index.html /www/data/app2/
 
 # Append "daemon off;" to the beginning of the configuration
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
